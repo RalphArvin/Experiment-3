@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+int main()
+
+{
+	double integers[10] = {1,2,3,4,5,6,7,8,9,10};
+	
+	double largest = integers[0];
+	double lowest = integers[0]; 
+	double total= 0;
+  
+	for (int a=1; a<10;a++) {
+	if (integers[a] > largest) {
+		largest=integers[a];
+	}
+	}
+   cout << "Largest Integer=" << largest;
+   cout << "             " << endl;
+   
+   for (int a=1; a<10;a++) {
+	if (integers[a] < lowest) {
+		lowest=integers[a];
+	}
+	}
+   cout << "Lowest Integer=" << lowest;
+   cout <<"             " <<endl;
+   
+   for (int a=1; a<10;a++) {
+   	total = total+integers[a];
+	
+	}
+   cout << "Total=" << total;
+   return 0;
+}
