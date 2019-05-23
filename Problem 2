@@ -1,0 +1,36 @@
+// Problem 2
+
+#include <iostream>
+
+using namespace std;
+
+const int province=2;
+const int week=7;
+
+int main()
+
+	
+{
+	int temp [province] [week];
+	
+	cout << "Input temperature within a week in province 1, 2, and 3 \n";
+
+    
+    for (int a = 0; a < province; ++a)
+    {
+        for(int b = 0; b < week; ++b)
+        {
+            cout << " Province " << a+1 << ", Day " << b+1 << " : ";
+            cin >> temp[a][b];
+      }
+		}
+    for (int a = 0; a < province; ++a)  {
+        for(int b = 0; b < week; ++b)
+     {
+            cout << " Province " << a+1 << ", Day " << b+1 << " = " << temp[a][b] << endl;
+      }
+  }
+
+    return 0;
+}Create a C++ program which prints the letters in a char array in reverse order and shows the size of 
+the array
